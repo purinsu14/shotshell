@@ -3,4 +3,8 @@ name = "shotshell"
 version = "0.1.0"
 edition = "2024"
 
+[[bin]]
+name = "shsh"
+path = "src/main.rs"
+
 [dependencies]

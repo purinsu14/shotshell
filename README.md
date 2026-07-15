@@ -19,7 +19,17 @@ Once you have Rust set up, you can clone the repository and build the project:
 ```bash
 git clone https://github.com/purinsu14/shotshell.git
 cd shotshell
+```
+
+Then using make:
+> **NOTE:** Linux only. Currently using ~/.local/bin convention.
+```bash
 make install
+```
+
+Or using cargo:
+```bash
+cargo install --path .
 ```
 
 ## Usage
