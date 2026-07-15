@@ -1,19 +1,24 @@
 TARGET = shsh
 BINARY = shotshell
 RELEASE_DIR = target/release
+UNAME := $(shell uname -s)
 
-.PHONY: build install clean uninstall
+.PHONY: build install clean uninstall check-os
 
-build:
+check-os:
+ifneq ($(UNAME),Linux)
+	$(error This project only supports Linux. Detected: $(UNAME))
+endif
+
+build: check-os
 	cargo build --release
 	cp $(RELEASE_DIR)/$(BINARY) $(RELEASE_DIR)/$(TARGET)
 
 install: build
 	mkdir -p ~/.local/bin
 	cp $(RELEASE_DIR)/$(TARGET) ~/.local/bin/
-
-clean:
-	cargo clean
+	@echo "Installed to ~/.local/bin — make sure it's in your PATH"
 
 uninstall:
 	rm -rf ~/.local/bin/$(TARGET)
+	cargo clean

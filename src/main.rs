@@ -1,4 +1,5 @@
 // Unix Shell in Rust
+// NOTE: Linux only. Relies on GNU coreutils (cp, mkdir, rm) and ~/.local/bin convention.
 
 use std::{
     env::{current_dir, set_current_dir},

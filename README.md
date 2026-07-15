@@ -1,6 +1,8 @@
 # Shotshell
 
-Shotshell is a random shell written in Rust. It provides a simple yet functional command-line interface (CLI) for interacting with the operating system.
+Shotshell (shsh) is a fast and simple shell written in Rust. It provides a simple yet functional command-line interface (CLI) for interacting with the operating system.
+
+> **NOTE:** Linux only. Relies on GNU coreutils (cp, mkdir, rm) and ~/.local/bin convention.
 
 ## Features
 
@@ -44,18 +46,6 @@ make clean
 ```
 
 This will remove the Shotshell executable from your system.
-
-## Contributing
-
-Contributions to Shotshell are welcome! If you find a bug or have a feature request, please open an issue on the GitHub repository. If you'd like to contribute code, feel free to submit a pull request.
-
-When contributing, please follow these guidelines:
-
-1. Fork the repository and create a new branch for your changes.
-2. Write clear and concise commit messages.
-3. Ensure your code follows the project's coding style and conventions.
-4. Test your changes thoroughly before submitting a pull request.
-5. Update the documentation if necessary.
 
 ## License
 
