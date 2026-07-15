@@ -50,9 +50,14 @@ You should see the initial prompt `$>`. From here, you can enter various command
 
 To uninstall Shotshell, run the following command:
 
+Using make:
 ```bash
 make uninstall
-make clean
+```
+
+Using cargo:
+```bash
+cargo uninstall shotshell
 ```
 
 This will remove the Shotshell executable from your system.
