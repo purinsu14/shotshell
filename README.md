@@ -10,7 +10,7 @@ Shotshell is a random shell written in Rust. It provides a simple yet functional
 
 ## Installation
 
-To use Shotshell, you'll need to have Rust installed on your system. You can download Rust from the [official website]{https://www.rust-lang.org/tools/install}.
+To use Shotshell, you'll need to have Rust installed on your system. You can download Rust from the [official website](https://www.rust-lang.org/tools/install).
 
 Once you have Rust set up, you can clone the repository and build the project:
 
