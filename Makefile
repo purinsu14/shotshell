@@ -1,5 +1,5 @@
 TARGET = shsh
-BINARY = shotshell
+BINARY = shsh
 RELEASE_DIR = target/release
 UNAME := $(shell uname -s)
 
