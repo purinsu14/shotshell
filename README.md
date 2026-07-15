@@ -1,4 +1,4 @@
-# Shotshell
+# Shotshell (shsh)
 
 Shotshell (shsh) is a fast and simple shell written in Rust. It provides a simple yet functional command-line interface (CLI) for interacting with the operating system.
 
