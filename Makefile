@@ -1,4 +1,3 @@
-TARGET = shsh
 BINARY = shsh
 RELEASE_DIR = target/release
 UNAME := $(shell uname -s)
@@ -12,11 +11,10 @@ endif
 
 build: check-os
 	cargo build --release
-	cp $(RELEASE_DIR)/$(BINARY) $(RELEASE_DIR)/$(TARGET)
 
 install: build
 	mkdir -p ~/.local/bin
-	cp $(RELEASE_DIR)/$(TARGET) ~/.local/bin/
+	cp $(RELEASE_DIR)/$(BINARY) ~/.local/bin/
 	@echo "Installed to ~/.local/bin — make sure it's in your PATH"
 
 uninstall:
