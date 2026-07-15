@@ -2,8 +2,6 @@
 
 Shotshell (shsh) is a fast and simple shell written in Rust. It provides a simple yet functional command-line interface (CLI) for interacting with the operating system.
 
-> **NOTE:** Linux only. Relies on GNU coreutils (cp, mkdir, rm) and ~/.local/bin convention.
-
 ## Features
 
 - Supports basic shell commands like `cd`, `exit`, and custom command execution.
